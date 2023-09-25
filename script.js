@@ -105,7 +105,7 @@ function displayTodoList() {
     });
 
     deleteButton.addEventListener("click", (e) => {
-      todos = todos.filter((t) => t != tesk);
+      todos = todos.filter((t) => t != task);
       localStorage.setItem("todos", JSON.stringify(todos));
       displayTodoList();
     });
