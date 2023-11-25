@@ -1,64 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,400&display=swap"
-      rel="stylesheet" />
 
-    <title>To do list</title>
-  </head>
-  <body>
-    <main class="app">
-      <section class="greeting">
-        <h2 class="title">What's up, <input type="text" id="name" placeholder="Name here" /></h2>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to my todo list app">
+  <link rel="stylesheet" href="style.css" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,400&display=swap"
+    rel="stylesheet" />
 
-      <section class="create-todo">
-        <h3>CREATE A TODO LIST</h3>
+  <title>To do list</title>
+</head>
 
-        <form id="new-todo-form">
-          <h4>What's on your todo list?</h4>
-          <input type="text" name="content" id="content" placeholder="Enter your task here" />
+<body>
+  <main class="app">
+    <section class="greeting">
+      <h2 class="title">What's up, <input type="text" id="name" placeholder="Name here" /></h2>
+    </section>
 
-          <h4>Pick a category</h4>
-          <div class="options">
-            <label>
-              <input type="radio" name="category" value="general" id="category1" />
-              <span class="bubble general"></span>
-              <div>General</div>
-            </label>
+    <section class="create-todo">
+      <h3>CREATE A TODO LIST</h3>
 
-            <label>
-              <input type="radio" name="category" value="work" id="category2" />
-              <span class="bubble work"></span>
-              <div>Work</div>
-            </label>
+      <form id="new-todo-form">
+        <h4>What's on your todo list?</h4>
+        <input type="text" name="content" id="content" placeholder="Enter your task here" />
 
-            <label>
-              <input type="radio" name="category" value="personal" id="category3" />
-              <span class="bubble personal"></span>
-              <div>Personal</div>
-            </label>
-          </div>
+        <h4>Pick a category</h4>
+        <div class="options">
+          <label>
+            <input type="radio" name="category" value="general" id="category1" />
+            <span class="bubble general"></span>
+            <div>General</div>
+          </label>
 
-          <input type="submit" value="+ Add Task" />
-        </form>
-      </section>
+          <label>
+            <input type="radio" name="category" value="work" id="category2" />
+            <span class="bubble work"></span>
+            <div>Work</div>
+          </label>
 
-      <section class="todo-list">
-        <h3>TODO LIST</h3>
-
-        <div class="list" id="todo-list">
-          <!-- will writhed by javascript -->
+          <label>
+            <input type="radio" name="category" value="personal" id="category3" />
+            <span class="bubble personal"></span>
+            <div>Personal</div>
+          </label>
         </div>
-      </section>
-    </main>
-    <script src="script.js"></script>
-  </body>
+
+        <input type="submit" value="+ Add Task" />
+      </form>
+    </section>
+
+    <section class="todo-list">
+      <h3>TODO LIST</h3>
+
+      <div class="list" id="todo-list">
+        <!-- will writhed by javascript -->
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
 </html>
